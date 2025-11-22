@@ -13,9 +13,19 @@ class Main{
 
         // an.eat();
 
-        ClassC cc = new ClassC();
-        cc.methodA();
-        cc.methodB();
+        // ClassC cc = new ClassC();
+        // cc.methodA();
+        // cc.methodB();
+
+        // ConA b = new B2(10);
+
+        Up up = new Down();
+        up.high(); // upcasting is support for runtime polymorphism.It has done automatically.
+        // up.down();
+
+        Down dn = (Down) up;
+        dn.down(); // Downcasting Up -> Down. It has done explicitly or manually.
+
 
     }
 }
